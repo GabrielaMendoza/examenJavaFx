@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="489.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mysqlc.MainController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="676.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionMarcas" text="Marcas" />
+                  <MenuItem mnemonicParsing="false" onAction="#OnActionProductos" text="Producto" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane fx:id="tabpane" layoutX="6.0" layoutY="29.0" prefHeight="443.0" prefWidth="663.0" tabClosingPolicy="UNAVAILABLE" />
+   </children>
+</AnchorPane>
